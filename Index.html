@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Watch Time Increaser</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        id="contact"
+        action=""
+        method="post"
+        onsubmit="return createAndLoadIframes()"
+      >
+        <h3 style="justify-content: center">Youtube Watch Time</h3>
+        <h4>Enter your details</h4>
+        <fieldset>
+          <input
+            type="number"
+            id="iframeCount"
+            min="1"
+            value="1"
+            placeholder="Number of Iframes"
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            type="text"
+            id="videoUrl"
+            placeholder="Enter YouTube Video URL"
+          />
+        </fieldset>
+        <fieldset>
+          <button type="submit">Submit</button>
+        </fieldset>
+        <p class="copyright">
+          To know how to use this
+          <a href="./documentation.html" target="_blank" title="Colorlib"
+            >Click here</a
+          >
+        </p>
+      </form>
+    </div>
+
+    <div id="iframeContainer"></div>
+
+    <script src="condition.js"></script>
+  </body>
+</html>
